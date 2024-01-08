@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Product landing page</title>
+    </head>
+    <body>
+        <header id="navbar">
+            <div class="nav-logo">
+                <img src="resources/nav-logo.png">
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#types">Types</a></li>
+                    <li><a href="#projects">Other projects</a></li>
+                    <li><a href="#contact">Contact info</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="scroll-watcher"></div>
+        <section id="about">
+            <div class="about-section-background">
+                <img class="about-section-background-image"
+                    src="resources/1.jpg"
+                    alt="picture of cockatiels on a branch"/>
+            </div>
+            <div class="about-container">
+                <h1>Welcome to the cockatiel fanpage</h1>
+                <div class="about-container-content">
+                    <div class="about-text">
+                        <p>The cockatiel (Nymphicus hollandicus), also known as the weero/weiro or quarrion, is a medium-size parrot that is a member of its own branch of the cockatoo family endemic to Australia. They are prized as household pets and companion parrots throughout the world and are relatively easy to breed compared to other parrots. As a caged bird, cockatiels are second in popularity only to the budgerigar.</p>
+                        <button class="sign-up">Sign up</button>
+                    </div>
+                    <div class="about-image">
+                        <img alt="A picture of a cockatiel with his wings wide open"
+                            src="resources/about.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="types">
+            <div class="text">
+                <h2>These are some of the most common cockatiels</h2>
+            </div>
+            <div class="types-container">
+                <div class="type">
+                    <img class="type-image" src="resources/normal-gray-cockatiel.jpg">
+                    <p class="img-paragraph">Normal gray cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/bronzefallow-cockatiel.jpg">
+                    <p class="img-paragraph">Bronzefallow cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/cinnamon-cockatiel.jpg"/>
+                    <p class="img-paragraph">Cinammon cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/Lutino-Cockatiel.jpg"/>
+                    <p class="img-paragraph">Lutino cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/pearl-cockatiel.JPG"/>
+                    <p class="img-paragraph">Pearl cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/pied-cockatiel.jpg"/>
+                    <p class="img-paragraph">Pied cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/silver-cockatiel.jpg"/>
+                    <p class="img-paragraph">Silver cockatiel</p>
+                </div>
+                <div class="type">
+                    <img class="type-image" src="resources/whitefaced-cockatiel.jpg"/>
+                    <p class="img-paragraph">Whitefaced cockatiel</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="text">
+                <h2>Here you can check out the previous projects made for The Odin Project so far</h2>    
+            </div>        
+            <div class="projects-container">
+                    <a class="link"
+                        href="https://adibast.github.io/odin-recipes/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/odin-recipes.jpg" 
+                            alt="Picture of a previous project made for TOP"/>
+                        <p class="img-paragraph">Recipes page</p>
+                    </a>
+                </div>
+        </section>
+        <section id="contact">
+            <div class="text">
+                <h2>For any inquires, contact me through social media or email</h2>
+            </div>
+            <div class="contact-container">
+                <div class="social-link-wrapper">
+                        <a href="https://github.com/Adibast"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="social-link-container github">
+                                <img class="social-icon" src="resources/github-icon.png"/>
+                                <p>GitHub</p>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@adibasts"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="social-link-container youtube">
+                                <img class="social-icon" src="resources/yt-icon.png"/>
+                                <p>YouTube</p>
+                            </div>
+                        </a>
+                        <a href="https://www.twitter.com/adibasts"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="social-link-container twitter">
+                                <img class="social-icon" src="resources/twitter-icon.png"/>
+                                <p>Twitter</p>
+                            </div>
+                        </a>
+                        <a href="mailto:adibasts.arts@gmail.com"
+                             class="social-link"
+                             target="_blank"
+                             rel="noopener noreferrer">
+                            <div class="social-link-container gmail">
+                                <img class="social-icon" src="resources/gmail-icon.png"/>
+                                <p>Gmail</p>
+                            </div>
+                        </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class>Website made by <a class="footer-link" href="https://github.com/Adibast" target="_blank" rel="noopener noreferrer"> Adibast</a></div>
+                <div class>for <a class="footer-link" href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">The Odin Project</a></div>
+            </div>
+        </footer>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        document.getElementById("navbar").style.top = "-10vh";
+                    }
+                prevScrollpos = currentScrollPos;
+                }
+        </script>
+    </body>
+</html>
