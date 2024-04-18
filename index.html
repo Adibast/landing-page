@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="styles.css"/>
-        <title>Product landing page</title>
+        <title>Landing page</title>
     </head>
     <body>
         <header id="navbar">
@@ -82,17 +82,71 @@
         </section>
         <section id="projects">
             <div class="text">
-                <h2>Here you can check out the previous projects made for The Odin Project so far</h2>    
+                <h2>Here you can check out some of my previous projects</h2>    
             </div>        
             <div class="projects-container">
                     <a class="link"
-                        href="https://adibast.github.io/odin-recipes/"
+                        href="https://adibast.github.io/dessert-recipes/"
                         target="_blank"
                         rel="noopener noreferrer">
                         <img class="icon"
-                            src="resources/odin-recipes.jpg" 
+                            src="resources/dessert-recipes.jpg" 
                             alt="Picture of a previous project made for TOP"/>
-                        <p class="img-paragraph">Recipes page</p>
+                        <p class="img-paragraph">Dessert recipes page</p>
+                    </a>
+                    <a class="link"
+                        href="https://adibast.github.io/drum-sequencer/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/drum-sequencer.jpg" 
+                            alt="Picture of a previous project"/>
+                        <p class="img-paragraph">Drum sequencer</p>
+                    </a>
+                    <a class="link"
+                        href="https://adibast.github.io/rps-arcade/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/rps-arcade.jpg" 
+                            alt="Picture of a previous project"/>
+                        <p class="img-paragraph">Rock paper scissors arcade</p>
+                    </a>
+                    <a class="link"
+                        href="https://adibast.github.io/flex-panel-gallery/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/flex-panel-gallery.jpg" 
+                            alt="Picture of a previous project"/>
+                        <p class="img-paragraph">Flex Panel Gallery</p>
+                    </a>
+                    <a class="link"
+                        href="https://adibast.github.io/etch-a-sketch/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/etch-a-sketch.jpg"
+                            alt="Picture of a previous project"/>
+                        <p class="img-paragraph">Etch-a-Sketch painting app</p>
+                    </a>
+                    <a class="link"
+                        href="https://adibast.github.io/grandfather-clock/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/grandfather-clock.jpg"
+                            alt="Picture of a previous project"/>
+                        <p class="img-paragraph">Grandfather clock</p>
+                    </a>
+                    <a class="link"
+                        href="https://adibast.github.io/calculator/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="icon"
+                            src="resources/calculator.jpg"
+                            alt="Picture of a previous project"/>
+                        <p class="img-paragraph">Calculator</p>
                     </a>
                 </div>
         </section>
@@ -143,21 +197,20 @@
         </section>
         <footer>
             <div class="footer-container">
-                <div class>Website made by <a class="footer-link" href="https://github.com/Adibast" target="_blank" rel="noopener noreferrer"> Adibast</a></div>
-                <div class>for <a class="footer-link" href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">The Odin Project</a></div>
+                <p class="footer-paragraph" >Website made by <a class="footer-link" href="https://github.com/Adibast" target="_blank" rel="noopener noreferrer"> Adibast</a></p>
             </div>
         </footer>
         <script>
-            var prevScrollpos = window.pageYOffset;
-                window.onscroll = function() {
-                    var currentScrollPos = window.pageYOffset;
-                    if (prevScrollpos > currentScrollPos) {
-                        document.getElementById("navbar").style.top = "0";
-                    } else {
-                        document.getElementById("navbar").style.top = "-10vh";
-                    }
-                prevScrollpos = currentScrollPos;
+            let prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                let currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-20vh";
                 }
+            prevScrollpos = currentScrollPos;
+            }
         </script>
     </body>
 </html>
