@@ -90,6 +90,7 @@ ul a:hover {
     display: grid;
     gap: 2em;
     max-width: 80vw;
+    max-height: 80vh;
     padding: 4vw;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.5);
@@ -106,9 +107,12 @@ ul a:hover {
     text-align: justify;
     text-justify: inter-word;
     width: 30%;
+    font-size: 1em;
+    line-height: 1em;
 }
 .about-image {
     width: 70%;
+    height: 80%;
     border: 2px solid lightslategray;
 }
 .about-image > img{
@@ -340,7 +344,34 @@ footer {
         opacity: 1;
     }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 399px) {
+    #about {
+        padding: 15vh 0 0 0;
+    }
+    .about-container {
+        gap: 0.5em;
+        padding: 0.5em;
+    }
+    .about-container-content {
+        gap: 1em;
+    }
+    .about-text {
+        width: 90%;
+        font-size: 0.9em;
+        gap: 0.5em;
+        line-height: 1em;
+    }
+    .about-text p {
+        width: 100% !important;
+    }
+    .social-link {
+        width: 35%;
+    }
+    .footer-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
     ul > li {
         display: flex;
         flex-direction: column;
@@ -350,6 +381,14 @@ footer {
     }
     .about-container > h1 {
         text-align: center;
+    }
+    .about-section-background {
+        height: 100vh;
+    }
+    .about-section-background-image {
+        height: 100%;
+        object-fit: none;
+        object-position: -2em;
     }
     .about-container-content {
         display: flex;
@@ -384,15 +423,50 @@ footer {
         animation-range-end: 30vh !important;
     }
 }
-@media (max-width: 399px) {
-    .social-link {
-        width: 35% !important;
+@media (min-width: 1900px) and (max-width: 2570px) {
+    .nav-logo {
+        height: 90%;
     }
-    .footer-container {
-        width: 90% !important;
+    .nav-bar ul, .nav-bar li {
+        width: 100%;
+        height: 100%;
+    }
+    .nav-bar li {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .nav-bar a {
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .about-container-content {
+        justify-content: space-around;
+    }
+    .about-container h1 {
+        font-size: 2em;
+    }
+    .about-text {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+    .about-image {
+        width: 65%;
+        height: 90%;
+    }
+    .text {
+        font-size: 1.5em;
+    }
+    .social-link-container p {
+        font-size: 1.5em;
+    }
+    .footer-paragraph {
+        font-size: 1.7em;
     }
 }
-@media (min-width: 3800px) {
+@media screen and (min-width: 3800px) {
     .nav-logo {
         height: 90%;
     }
